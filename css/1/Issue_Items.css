@@ -1,0 +1,445 @@
+.mediaViewInfo {
+	--web-view-name: Issue Items;
+	--web-view-id: Issue_Items;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Issue_Items;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Issue_Items {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Issue Items;
+	--web-view-id: Issue_Items;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Rectangle_23_es {
+	fill: rgba(158,198,167,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_23_es {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#s_et {
+	position: absolute;
+	width: 451px;
+	height: 377px;
+	left: 1411px;
+	top: 27px;
+	overflow: visible;
+}
+#Rectangle_26_eu {
+	fill: rgba(28,108,81,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_26_eu {
+	position: absolute;
+	overflow: visible;
+	width: 450px;
+	height: 96px;
+	left: 52px;
+	top: 34px;
+}
+#Issue_Items_ev {
+	left: 99.5px;
+	top: 45.5px;
+	position: absolute;
+	overflow: visible;
+	width: 356px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 76px;
+	color: rgba(0,0,0,1);
+}
+#No_of_Weapon_No_of_Accessories {
+	left: 52px;
+	top: 182px;
+	position: absolute;
+	overflow: visible;
+	width: 293px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_32 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_32 {
+	position: absolute;
+	overflow: visible;
+	width: 159px;
+	height: 33px;
+	left: 353px;
+	top: 182px;
+}
+#Rectangle_33 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_33 {
+	position: absolute;
+	overflow: visible;
+	width: 159px;
+	height: 34px;
+	left: 353px;
+	top: 226px;
+}
+#Rectangle_34 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_34 {
+	position: absolute;
+	overflow: visible;
+	width: 159px;
+	height: 33px;
+	left: 353px;
+	top: 270px;
+}
+#Image_5 {
+	position: absolute;
+	width: 196px;
+	height: 169px;
+	left: 84px;
+	top: 386px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Image_6 {
+	position: absolute;
+	width: 198px;
+	height: 169px;
+	left: 304px;
+	top: 386px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Image_7 {
+	position: absolute;
+	width: 189px;
+	height: 162px;
+	left: 526px;
+	top: 393px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#BD-08 {
+	left: 132px;
+	top: 578px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#LMG {
+	left: 363px;
+	top: 578px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#SMG {
+	left: 595px;
+	top: 578px;
+	position: absolute;
+	overflow: visible;
+	width: 73px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Image_8 {
+	position: absolute;
+	width: 215px;
+	height: 169px;
+	left: 739px;
+	top: 393px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Pistol {
+	left: 806px;
+	top: 578px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Image_9 {
+	position: absolute;
+	width: 230px;
+	height: 180px;
+	left: 978px;
+	top: 388px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#G3 {
+	left: 1070px;
+	top: 578px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Image_10 {
+	position: absolute;
+	width: 109px;
+	height: 109px;
+	left: 235px;
+	top: 715px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Image_11 {
+	position: absolute;
+	width: 109px;
+	height: 109px;
+	left: 393px;
+	top: 715px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Image_12 {
+	position: absolute;
+	width: 109px;
+	height: 109px;
+	left: 551px;
+	top: 715px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Image_13 {
+	position: absolute;
+	width: 109px;
+	height: 109px;
+	left: 709px;
+	top: 715px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Image_14 {
+	position: absolute;
+	width: 109px;
+	height: 109px;
+	left: 867px;
+	top: 715px;
+	overflow: visible;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Unlock.html;
+	cursor: pointer;
+}
+#Magazine {
+	left: 52.5px;
+	top: 749.5px;
+	position: absolute;
+	overflow: visible;
+	width: 178px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 43px;
+	color: rgba(0,0,0,1);
+}
+#BD-08_fg {
+	left: 244px;
+	top: 843px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#LMG_fh {
+	left: 413px;
+	top: 847px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#SMG_fi {
+	left: 571px;
+	top: 847px;
+	position: absolute;
+	overflow: visible;
+	width: 73px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Pistol_fj {
+	left: 720px;
+	top: 847px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#G3_fk {
+	left: 905px;
+	top: 847px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}

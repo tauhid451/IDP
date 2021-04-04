@@ -1,0 +1,418 @@
+.mediaViewInfo {
+	--web-view-name: Login – 2;
+	--web-view-id: Login__2;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Login__2;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Login__2 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Login – 2;
+	--web-view-id: Login__2;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Rectangle_17_ck {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_17_ck {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_1_cl {
+	fill: rgba(185,72,72,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_1_cl {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 186px;
+	left: 0px;
+	top: 0px;
+}
+#ARSENAL_MANAGEMENT_SYSTEM_cm {
+	mix-blend-mode: darken;
+	filter: drop-shadow(0px 3px 9px rgba(122, 11, 187, 0.439));
+	left: 232px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 713px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 67px;
+	color: rgba(37,37,37,1);
+	text-transform: uppercase;
+}
+#s_cn {
+	position: absolute;
+	width: 194px;
+	height: 181px;
+	left: 21px;
+	top: 3px;
+	overflow: visible;
+}
+#Rectangle_6_co {
+	fill: rgba(204,186,186,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_6_co {
+	position: absolute;
+	overflow: visible;
+	width: 169px;
+	height: 53px;
+	left: 1183px;
+	top: 104px;
+}
+#Rectangle_4_cp {
+	fill: rgba(204,186,186,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_4_cp {
+	position: absolute;
+	overflow: visible;
+	width: 220px;
+	height: 53px;
+	left: 1602px;
+	top: 103px;
+}
+#Rectangle_7_cq {
+	fill: rgba(204,186,186,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_7_cq {
+	position: absolute;
+	overflow: visible;
+	width: 169px;
+	height: 53px;
+	left: 1392px;
+	top: 104px;
+}
+#Home_cr {
+	left: 1204.5px;
+	top: 107.5px;
+	position: absolute;
+	overflow: visible;
+	width: 126px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: index.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Login_cs {
+	left: 1421px;
+	top: 106px;
+	position: absolute;
+	overflow: visible;
+	width: 113px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: login.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(255,255,255,1);
+}
+#Rectangle_1_ct {
+	opacity: 0.52;
+	position: absolute;
+	width: 1920px;
+	height: 894px;
+	left: 0px;
+	top: 186px;
+	overflow: visible;
+}
+#Rectangle_18_cu {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_18_cu {
+	position: absolute;
+	overflow: visible;
+	width: 948px;
+	height: 844px;
+	left: 486px;
+	top: 223px;
+}
+#Image_1 {
+	position: absolute;
+	width: 287px;
+	height: 282px;
+	left: 817px;
+	top: 240px;
+	overflow: visible;
+}
+#USER_ID__cw {
+	left: 621px;
+	top: 630px;
+	position: absolute;
+	overflow: visible;
+	width: 182px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_19 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_19 {
+	position: absolute;
+	overflow: visible;
+	width: 508px;
+	height: 59px;
+	left: 817px;
+	top: 615px;
+}
+#PASSWORD__cy {
+	left: 556px;
+	top: 742px;
+	position: absolute;
+	overflow: visible;
+	width: 262px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_20_cz {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_20_cz {
+	position: absolute;
+	overflow: visible;
+	width: 508px;
+	height: 59px;
+	left: 817px;
+	top: 729px;
+}
+#Forget_Password_c {
+	left: 1052px;
+	top: 819px;
+	position: absolute;
+	overflow: visible;
+	width: 277px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Admin_c {
+	opacity: 0.5;
+	left: 832px;
+	top: 622px;
+	position: absolute;
+	overflow: visible;
+	width: 138px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#_c {
+	opacity: 0.5;
+	left: 833.5px;
+	top: 742.5px;
+	position: absolute;
+	overflow: visible;
+	width: 282px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 79px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_21_c {
+	fill: rgba(207,77,77,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_21_c {
+	position: absolute;
+	overflow: visible;
+	width: 230px;
+	height: 72px;
+	left: 687px;
+	top: 892px;
+}
+#Rectangle_22_c {
+	fill: rgba(207,77,77,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_22_c {
+	position: absolute;
+	overflow: visible;
+	width: 230px;
+	height: 72px;
+	left: 1049px;
+	top: 892px;
+}
+#Login_c {
+	left: 1086px;
+	top: 899px;
+	position: absolute;
+	overflow: visible;
+	width: 157px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Admin.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 67px;
+	color: rgba(37,37,37,1);
+}
+#Signup_c {
+	left: 704px;
+	top: 896px;
+	position: absolute;
+	overflow: visible;
+	width: 198px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Signup.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 67px;
+	color: rgba(37,37,37,1);
+}
+#About_Us_c {
+	left: 1614px;
+	top: 108px;
+	position: absolute;
+	overflow: visible;
+	width: 197px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: About.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}

@@ -1,0 +1,865 @@
+.mediaViewInfo {
+	--web-view-name: KOTE NCO;
+	--web-view-id: KOTE_NCO;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: KOTE_NCO;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#KOTE_NCO {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: KOTE NCO;
+	--web-view-id: KOTE_NCO;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Rectangle_23 {
+	fill: rgba(158,198,167,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_23 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#s_db {
+	position: absolute;
+	width: 194px;
+	height: 181px;
+	left: 1665px;
+	top: 20px;
+	overflow: visible;
+}
+#Rectangle_24 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(9,9,9,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_24 {
+	position: absolute;
+	overflow: visible;
+	width: 880px;
+	height: 689px;
+	left: 16px;
+	top: 1px;
+}
+#Rank_ {
+	left: 70px;
+	top: 135px;
+	position: absolute;
+	overflow: visible;
+	width: 132px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+#Soldiers_Info {
+	left: 244px;
+	top: 38px;
+	position: absolute;
+	overflow: visible;
+	width: 362px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 67px;
+	color: rgba(37,37,37,1);
+	text-decoration: underline;
+}
+#User_name {
+	left: 68px;
+	top: 200px;
+	position: absolute;
+	overflow: visible;
+	width: 243px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+#Company_Battery__Squadron_ {
+	left: 70px;
+	top: 330px;
+	position: absolute;
+	overflow: visible;
+	width: 665px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+#BA_No_Snk_No {
+	left: 68px;
+	top: 265px;
+	position: absolute;
+	overflow: visible;
+	width: 335px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(2,2,2,1);
+}
+#Kote_ {
+	left: 70px;
+	top: 395px;
+	position: absolute;
+	overflow: visible;
+	width: 132px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(2,2,2,1);
+}
+#Unit {
+	left: 70px;
+	top: 460px;
+	position: absolute;
+	overflow: visible;
+	width: 101px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(2,2,2,1);
+}
+#Brigade {
+	left: 68px;
+	top: 525px;
+	position: absolute;
+	overflow: visible;
+	width: 176px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(2,2,2,1);
+}
+#DivisionFormation_ {
+	left: 68px;
+	top: 590px;
+	position: absolute;
+	overflow: visible;
+	width: 426px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(2,2,2,1);
+}
+#Image_2 {
+	position: absolute;
+	width: 383px;
+	height: 383px;
+	left: 919px;
+	top: 9px;
+	overflow: visible;
+}
+#Line_2 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_2 {
+	overflow: visible;
+	position: absolute;
+	width: 513px;
+	height: 1px;
+	left: 323.5px;
+	top: 249.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_3 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_3 {
+	overflow: visible;
+	position: absolute;
+	width: 424px;
+	height: 1px;
+	left: 412.5px;
+	top: 314.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_5 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_5 {
+	overflow: visible;
+	position: absolute;
+	width: 635px;
+	height: 1px;
+	left: 201.5px;
+	top: 444.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_6 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_6 {
+	overflow: visible;
+	position: absolute;
+	width: 94px;
+	height: 1px;
+	left: 742.5px;
+	top: 379.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_7 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_7 {
+	overflow: visible;
+	position: absolute;
+	width: 657px;
+	height: 1px;
+	left: 179.5px;
+	top: 509.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_8 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_8 {
+	overflow: visible;
+	position: absolute;
+	width: 583px;
+	height: 1px;
+	left: 253.5px;
+	top: 574.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_9 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_9 {
+	overflow: visible;
+	position: absolute;
+	width: 346px;
+	height: 1px;
+	left: 490.5px;
+	top: 639.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_10 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_10 {
+	overflow: visible;
+	position: absolute;
+	width: 635px;
+	height: 1px;
+	left: 201.5px;
+	top: 184.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Personal_Weapon_No {
+	left: 50.5px;
+	top: 833.5px;
+	position: absolute;
+	overflow: visible;
+	width: 455px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_25 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_25 {
+	position: absolute;
+	overflow: visible;
+	width: 364px;
+	height: 62px;
+	left: 552px;
+	top: 825px;
+}
+#Rectangle_26 {
+	fill: rgba(28,108,81,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_26 {
+	position: absolute;
+	overflow: visible;
+	width: 389px;
+	height: 96px;
+	left: 919px;
+	top: 454px;
+}
+#Issue_eg {
+	left: 1033.5px;
+	top: 465.5px;
+	position: absolute;
+	overflow: visible;
+	width: 162px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Issue_Items.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 76px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_27 {
+	fill: rgba(245,112,112,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_27 {
+	position: absolute;
+	overflow: visible;
+	width: 389px;
+	height: 94px;
+	left: 916px;
+	top: 568px;
+}
+#Deposit_ei {
+	left: 987.5px;
+	top: 577.5px;
+	position: absolute;
+	overflow: visible;
+	width: 254px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 76px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_29 {
+	fill: rgba(221,235,182,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_29 {
+	position: absolute;
+	overflow: visible;
+	width: 418px;
+	height: 104px;
+	left: 1456px;
+	top: 721px;
+}
+#Rectangle_30 {
+	fill: rgba(221,235,182,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_30 {
+	position: absolute;
+	overflow: visible;
+	width: 367px;
+	height: 133px;
+	left: 552px;
+	top: 911px;
+}
+#Weapon_Details {
+	left: 1481.5px;
+	top: 746.5px;
+	position: absolute;
+	overflow: visible;
+	width: 368px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Inventory.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 54px;
+	color: rgba(0,0,0,1);
+}
+#Maintenance_d {
+	left: 560.5px;
+	top: 952.5px;
+	position: absolute;
+	overflow: visible;
+	width: 349px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Maintenance.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 62px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_31 {
+	fill: rgba(255,203,203,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_31 {
+	position: absolute;
+	overflow: visible;
+	width: 418px;
+	height: 99px;
+	left: 1456px;
+	top: 849px;
+}
+#Report_d {
+	left: 1510.5px;
+	top: 846.5px;
+	position: absolute;
+	overflow: visible;
+	width: 310px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Report.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 105px;
+	color: rgba(255,0,0,1);
+}
+#Kote_No__ {
+	left: 1456px;
+	top: 375px;
+	position: absolute;
+	overflow: visible;
+	width: 161px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Log_Out {
+	left: 1684px;
+	top: 995px;
+	position: absolute;
+	overflow: visible;
+	width: 176px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: login.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+#Kote_NCO_ {
+	left: 1456px;
+	top: 427px;
+	position: absolute;
+	overflow: visible;
+	width: 177px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Coy_ {
+	left: 1456px;
+	top: 479px;
+	position: absolute;
+	overflow: visible;
+	width: 79px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Unit_ {
+	left: 1456px;
+	top: 522px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Brigade_ {
+	left: 1456px;
+	top: 563px;
+	position: absolute;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#DivisionFormation__ed {
+	left: 1456px;
+	top: 606px;
+	position: absolute;
+	overflow: visible;
+	width: 307px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Image_4 {
+	position: absolute;
+	width: 478px;
+	height: 132px;
+	left: 53px;
+	top: 912px;
+	overflow: visible;
+}
+#Rectangle_37 {
+	fill: rgba(28,108,81,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_37 {
+	position: absolute;
+	overflow: visible;
+	width: 389px;
+	height: 96px;
+	left: 919px;
+	top: 454px;
+}
+#Issue_eg {
+	left: 1033.5px;
+	top: 465.5px;
+	position: absolute;
+	overflow: visible;
+	width: 162px;
+	white-space: nowrap;
+	transition: all 0.3s ease-out;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Issue_Items.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 76px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_38 {
+	fill: rgba(245,112,112,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_38 {
+	position: absolute;
+	overflow: visible;
+	width: 389px;
+	height: 94px;
+	left: 916px;
+	top: 568px;
+}
+#Deposit_ei {
+	left: 987.5px;
+	top: 577.5px;
+	position: absolute;
+	overflow: visible;
+	width: 254px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 76px;
+	color: rgba(0,0,0,1);
+}
+#Line_41 {
+	fill: transparent;
+	stroke: rgba(28,108,81,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_41 {
+	overflow: visible;
+	position: absolute;
+	width: 9px;
+	height: 1080.019px;
+	left: 1381.5px;
+	top: -17.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_67 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_67 {
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	height: 22px;
+	left: 1775px;
+	top: 613px;
+}
+#Rectangle_68 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_68 {
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	height: 22px;
+	left: 1775px;
+	top: 570px;
+}
+#Rectangle_70 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_70 {
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	height: 22px;
+	left: 1775px;
+	top: 480px;
+}
+#Rectangle_69 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_69 {
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	height: 22px;
+	left: 1775px;
+	top: 529px;
+}
+#Rectangle_71 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_71 {
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	height: 22px;
+	left: 1775px;
+	top: 434px;
+}
+#Rectangle_72 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_72 {
+	position: absolute;
+	overflow: visible;
+	width: 103px;
+	height: 22px;
+	left: 1775px;
+	top: 382px;
+}

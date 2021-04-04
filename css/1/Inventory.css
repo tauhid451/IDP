@@ -1,0 +1,1135 @@
+.mediaViewInfo {
+	--web-view-name: Inventory;
+	--web-view-id: Inventory;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Inventory;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Inventory {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Inventory;
+	--web-view-id: Inventory;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Rectangle_23_i {
+	fill: rgba(158,198,167,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_23_i {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#s_i {
+	position: absolute;
+	width: 388px;
+	height: 316px;
+	left: 1479px;
+	top: -15px;
+	overflow: visible;
+}
+#Rectangle_26_i {
+	fill: rgba(28,108,81,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_26_i {
+	position: absolute;
+	overflow: visible;
+	width: 396px;
+	height: 96px;
+	left: 205px;
+	top: 136px;
+}
+#Inventory_i {
+	left: 262.5px;
+	top: 143.5px;
+	position: absolute;
+	overflow: visible;
+	width: 310px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 76px;
+	color: rgba(0,0,0,1);
+}
+#No_of_Weapon_No_of_Accessories_i {
+	left: 1407px;
+	top: 357px;
+	position: absolute;
+	overflow: visible;
+	width: 293px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_32_i {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_32_i {
+	position: absolute;
+	overflow: visible;
+	width: 198px;
+	height: 33px;
+	left: 1699px;
+	top: 357px;
+}
+#Rectangle_33_i {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_33_i {
+	position: absolute;
+	overflow: visible;
+	width: 198px;
+	height: 34px;
+	left: 1699px;
+	top: 401px;
+}
+#Rectangle_34_ja {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_34_ja {
+	position: absolute;
+	overflow: visible;
+	width: 198px;
+	height: 33px;
+	left: 1699px;
+	top: 445px;
+}
+#Image_5_jb {
+	position: absolute;
+	width: 196px;
+	height: 169px;
+	left: 89px;
+	top: 317px;
+	overflow: visible;
+}
+#Image_6_jc {
+	position: absolute;
+	width: 198px;
+	height: 169px;
+	left: 304px;
+	top: 317px;
+	overflow: visible;
+}
+#Image_7_jd {
+	position: absolute;
+	width: 189px;
+	height: 162px;
+	left: 526px;
+	top: 324px;
+	overflow: visible;
+}
+#ID762mm__Assault_Rifle {
+	left: 113px;
+	top: 502px;
+	position: absolute;
+	overflow: visible;
+	width: 186px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#LMG_jf {
+	left: 361px;
+	top: 522px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#SMG_jg {
+	left: 585px;
+	top: 509px;
+	position: absolute;
+	overflow: visible;
+	width: 73px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Image_8_jh {
+	position: absolute;
+	width: 215px;
+	height: 169px;
+	left: 744px;
+	top: 324px;
+	overflow: visible;
+}
+#Pistol_ji {
+	left: 811px;
+	top: 516px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Image_9_jj {
+	position: absolute;
+	width: 210px;
+	height: 165px;
+	left: 983px;
+	top: 328px;
+	overflow: visible;
+}
+#G3_jk {
+	left: 1065px;
+	top: 520px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Line_26 {
+	fill: transparent;
+	stroke: rgba(28,108,81,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_26 {
+	overflow: visible;
+	position: absolute;
+	width: 1920px;
+	height: 5px;
+	left: 0.5px;
+	top: 301.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Image_17 {
+	position: absolute;
+	width: 112px;
+	height: 112px;
+	left: 81px;
+	top: 124px;
+	overflow: visible;
+}
+#Line_27 {
+	fill: transparent;
+	stroke: rgba(28,108,81,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_27 {
+	overflow: visible;
+	position: absolute;
+	width: 5px;
+	height: 761px;
+	left: 1387.5px;
+	top: 301.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_59 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_59 {
+	position: absolute;
+	overflow: visible;
+	width: 490px;
+	height: 69px;
+	left: 1409px;
+	top: 681px;
+}
+#Search_Weapon {
+	left: 1528px;
+	top: 551px;
+	position: absolute;
+	overflow: visible;
+	width: 249px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+	text-decoration: underline;
+}
+#Line_28 {
+	fill: transparent;
+	stroke: rgba(28,108,81,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_28 {
+	overflow: visible;
+	position: absolute;
+	width: 533px;
+	height: 5px;
+	left: 1387.5px;
+	top: 522.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Types_of_Weapon_ {
+	left: 1409px;
+	top: 642px;
+	position: absolute;
+	overflow: visible;
+	width: 293px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Body_Number__js {
+	left: 1411px;
+	top: 769px;
+	position: absolute;
+	overflow: visible;
+	width: 235px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_60 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_60 {
+	position: absolute;
+	overflow: visible;
+	width: 486px;
+	height: 67px;
+	left: 1411px;
+	top: 822px;
+}
+#Rectangle_61 {
+	fill: rgba(187,187,187,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_61 {
+	position: absolute;
+	overflow: visible;
+	width: 224px;
+	height: 56px;
+	left: 1533px;
+	top: 914px;
+}
+#Search_jv {
+	left: 1586.5px;
+	top: 922.5px;
+	position: absolute;
+	overflow: visible;
+	width: 119px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	color: rgba(0,0,0,1);
+}
+#Rifle {
+	left: 1435px;
+	top: 698px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#ID18 {
+	left: 1435px;
+	top: 840px;
+	position: absolute;
+	overflow: visible;
+	width: 41px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Rectangle_62 {
+	fill: rgba(206,213,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_62 {
+	position: absolute;
+	overflow: visible;
+	width: 1301px;
+	height: 394px;
+	left: 63px;
+	top: 644px;
+}
+#Rectangle_63 {
+	fill: rgba(175,199,247,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_63 {
+	position: absolute;
+	overflow: visible;
+	width: 1301px;
+	height: 109px;
+	left: 63px;
+	top: 644px;
+}
+#Line_30 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_30 {
+	overflow: visible;
+	position: absolute;
+	width: 2px;
+	height: 401.002px;
+	left: 373.5px;
+	top: 644.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_31 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_31 {
+	overflow: visible;
+	position: absolute;
+	width: 2px;
+	height: 397.002px;
+	left: 598.5px;
+	top: 641.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_32 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_32 {
+	overflow: visible;
+	position: absolute;
+	width: 1.647px;
+	height: 388.002px;
+	left: 712.5px;
+	top: 650.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_33 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_33 {
+	overflow: visible;
+	position: absolute;
+	width: 1301.998px;
+	height: 3px;
+	left: 66px;
+	top: 796.59px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_34 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_34 {
+	overflow: visible;
+	position: absolute;
+	width: 1301.997px;
+	height: 2px;
+	left: 66px;
+	top: 845.324px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_35 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_35 {
+	overflow: visible;
+	position: absolute;
+	width: 1301.998px;
+	height: 3px;
+	left: 63px;
+	top: 891.049px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_36 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_36 {
+	overflow: visible;
+	position: absolute;
+	width: 1301.998px;
+	height: 3px;
+	left: 62px;
+	top: 938.747px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Issued_by {
+	left: 386px;
+	top: 683px;
+	position: absolute;
+	overflow: visible;
+	width: 196px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Time {
+	left: 611px;
+	top: 683px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Deposition__Time {
+	left: 720px;
+	top: 663px;
+	position: absolute;
+	overflow: visible;
+	width: 181px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Issued_on {
+	left: 162px;
+	top: 683px;
+	position: absolute;
+	overflow: visible;
+	width: 201px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Ser {
+	left: 75px;
+	top: 679px;
+	position: absolute;
+	overflow: visible;
+	width: 69px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Line_29 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_29 {
+	overflow: visible;
+	position: absolute;
+	width: 1.365px;
+	height: 396px;
+	left: 150.135px;
+	top: 641.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#ID1 {
+	left: 89px;
+	top: 753px;
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#ID2 {
+	left: 89px;
+	top: 799px;
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#ID3 {
+	left: 89px;
+	top: 847px;
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#ID4 {
+	left: 89px;
+	top: 894px;
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#ID5 {
+	left: 89px;
+	top: 941px;
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#ID6 {
+	left: 89px;
+	top: 988px;
+	position: absolute;
+	overflow: visible;
+	width: 28px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+#Line_37 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_37 {
+	overflow: visible;
+	position: absolute;
+	width: 1301px;
+	height: 1px;
+	left: 63.5px;
+	top: 987.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#ID04_Nov_20 {
+	left: 181.5px;
+	top: 760.5px;
+	position: absolute;
+	overflow: visible;
+	width: 163px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Snk_Rasel {
+	left: 395px;
+	top: 759px;
+	position: absolute;
+	overflow: visible;
+	width: 145px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#ID0900 {
+	left: 611px;
+	top: 761px;
+	position: absolute;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Line_38 {
+	fill: transparent;
+	stroke: rgba(28,108,81,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_38 {
+	overflow: visible;
+	position: absolute;
+	width: 533px;
+	height: 5px;
+	left: 1387.5px;
+	top: 994.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_64 {
+	fill: rgba(231,243,198,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_64 {
+	position: absolute;
+	overflow: visible;
+	width: 533px;
+	height: 67px;
+	left: 1388px;
+	top: 995px;
+}
+#Rack_Details_kp {
+	left: 1517.5px;
+	top: 1004.5px;
+	position: absolute;
+	overflow: visible;
+	width: 257px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Rack_Details.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(0,0,0,1);
+}
+#Line_39 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_39 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 390px;
+	left: 900.5px;
+	top: 644.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#ID1500 {
+	left: 770px;
+	top: 759px;
+	position: absolute;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Line_40 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_40 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 394px;
+	left: 1138.5px;
+	top: 644.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Purpose {
+	left: 959px;
+	top: 680px;
+	position: absolute;
+	overflow: visible;
+	width: 129px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Condition {
+	left: 1175px;
+	top: 681px;
+	position: absolute;
+	overflow: visible;
+	width: 155px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Firing {
+	left: 973px;
+	top: 759px;
+	position: absolute;
+	overflow: visible;
+	width: 83px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Ok {
+	left: 1229px;
+	top: 759px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Rifle_Name__BD-08_18 {
+	left: 67px;
+	top: 605px;
+	position: absolute;
+	overflow: visible;
+	width: 365px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Kote__3 {
+	left: 1240px;
+	top: 606px;
+	position: absolute;
+	overflow: visible;
+	width: 125px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Okinawa;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(0,0,0,1);
+}
+#Ellipse_2_kz {
+	fill: rgba(38,54,54,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: kotenco.html;
+	cursor: pointer;
+}
+.Ellipse_2_kz {
+	position: absolute;
+	overflow: visible;
+	width: 106px;
+	height: 80px;
+	left: 81px;
+	top: 26px;
+}
+#Line_52_k {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_52_k {
+	overflow: visible;
+	position: absolute;
+	width: 53px;
+	height: 5px;
+	left: 109.5px;
+	top: 66.5px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: kotenco.html;
+	cursor: pointer;
+}
+#Line_53_k {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_53_k {
+	overflow: visible;
+	position: absolute;
+	width: 23.345px;
+	height: 21.717px;
+	left: 105.5px;
+	top: 66.5px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: kotenco.html;
+	cursor: pointer;
+}
+#Line_54_k {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_54_k {
+	overflow: visible;
+	position: absolute;
+	width: 23.124px;
+	height: 19.904px;
+	left: 105.5px;
+	top: 50.5px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: kotenco.html;
+	cursor: pointer;
+}

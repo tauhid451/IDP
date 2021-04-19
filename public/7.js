@@ -77,7 +77,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      rfid: "",
+      gunType: "-1",
+      purpose: "-1",
+      duty: "-1",
+      showInputForm: false
+    };
+  },
+  methods: {
+    unlockGun: function unlockGun() {
+      var formData = new FormData();
+      formData.set("gun_id", this.gunType);
+      formData.set("purpose", this.purpose);
+      formData.set("duty", this.duty);
+      formData.set("rfid", this.rfid);
+      var url = "/api/admin/issue";
+      axios.post(url, formData).then(function (res) {
+        console.log(res);
+        alert("Issued!");
+      })["catch"](function (err) {
+        console.log(err);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -102,163 +130,235 @@ var render = function() {
       _c("navbar", { tag: "component" }),
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
-        _c(
-          "form",
-          { staticClass: "m-5" },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              { staticClass: "btn btn-primary", attrs: { to: "/issueReport" } },
-              [_vm._v("\n                Lock\n            ")]
-            )
-          ],
-          1
-        )
+        _vm.showInputForm
+          ? _c("div", { staticClass: "m-5" }, [
+              _c("div", { staticClass: "row mb-3" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-sm-2 col-form-label",
+                    attrs: { for: "inputEmail3" }
+                  },
+                  [_vm._v("Type of gun")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.gunType,
+                        expression: "gunType"
+                      }
+                    ],
+                    staticClass: "form-select form-select-lg w-75 p-2",
+                    attrs: { id: "autoSizingSelect" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.gunType = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { selected: "", value: "-1" } }, [
+                      _vm._v("Choose Gun Type...")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "1" } }, [_vm._v("BD-08")]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "2" } }, [_vm._v("LMG")]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "3" } }, [_vm._v("SMG")]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "4" } }, [_vm._v("Pistol")]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "5" } }, [_vm._v("G3")])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row mb-3" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-sm-2 col-form-label",
+                    attrs: { for: "inputPassword3" }
+                  },
+                  [_vm._v("Select Purpose")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.purpose,
+                        expression: "purpose"
+                      }
+                    ],
+                    staticClass: "form-select form-select-lg w-75 p-2",
+                    attrs: { id: "autoSizingSelect" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.purpose = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { selected: "", value: "-1" } }, [
+                      _vm._v("Choose Purpose...")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "firing" } }, [
+                      _vm._v("Firing")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "maintainance" } }, [
+                      _vm._v("Maintainance")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "training" } }, [
+                      _vm._v("Training")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "duty" } }, [_vm._v("Duty")])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row mb-3" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "col-sm-2 col-form-label",
+                    attrs: { for: "inputPassword3" }
+                  },
+                  [_vm._v("Select Duty")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.duty,
+                        expression: "duty"
+                      }
+                    ],
+                    staticClass: "form-select form-select-lg w-75 p-2",
+                    attrs: { id: "autoSizingSelect" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.duty = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { selected: "", value: "-1" } }, [
+                      _vm._v("Choose Duty Type...")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "on duty" } }, [
+                      _vm._v("On Duty")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "on station" } }, [
+                      _vm._v("Out Station")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary",
+                  on: { click: _vm.unlockGun }
+                },
+                [_vm._v("Unlock")]
+              )
+            ])
+          : _c("div", { staticClass: "m-5 text-center" }, [
+              _c("h3", [_vm._v("Insert RFID")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.rfid,
+                    expression: "rfid"
+                  }
+                ],
+                attrs: { type: "text", autofocus: "" },
+                domProps: { value: _vm.rfid },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.rfid = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "mt-3" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    on: {
+                      click: function($event) {
+                        _vm.rfid.length > 0 ? (_vm.showInputForm = true) : ""
+                      }
+                    }
+                  },
+                  [_vm._v("\n          Issue\n        ")]
+                )
+              ])
+            ])
       ])
     ],
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row mb-3" }, [
-      _c(
-        "label",
-        {
-          staticClass: "col-sm-2 col-form-label",
-          attrs: { for: "inputEmail3" }
-        },
-        [_vm._v("Type of gun")]
-      ),
-      _vm._v(" "),
-      _c(
-        "select",
-        {
-          staticClass: "form-select form-select-lg w-75 p-2",
-          attrs: { id: "autoSizingSelect" }
-        },
-        [
-          _c("option", { attrs: { selected: "" } }, [
-            _vm._v("Choose Gun Type...")
-          ]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "1" } }, [_vm._v("BD-08")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "2" } }, [_vm._v("LMG")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "3" } }, [_vm._v("SMG")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "4" } }, [_vm._v("Pistol")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "5" } }, [_vm._v("G3")])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row mb-3" }, [
-      _c(
-        "label",
-        {
-          staticClass: "col-sm-2 col-form-label",
-          attrs: { for: "inputPassword3" }
-        },
-        [_vm._v("Select Purpose")]
-      ),
-      _vm._v(" "),
-      _c(
-        "select",
-        {
-          staticClass: "form-select form-select-lg w-75 p-2",
-          attrs: { id: "autoSizingSelect" }
-        },
-        [
-          _c("option", { attrs: { selected: "" } }, [
-            _vm._v("Choose Purpose...")
-          ]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "1" } }, [_vm._v("Firing")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "2" } }, [_vm._v("Maintainance")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "3" } }, [_vm._v("Training")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "4" } }, [_vm._v("Duty")])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row mb-3" }, [
-      _c(
-        "label",
-        {
-          staticClass: "col-sm-2 col-form-label",
-          attrs: { for: "inputPassword3" }
-        },
-        [_vm._v("Select Duty")]
-      ),
-      _vm._v(" "),
-      _c(
-        "select",
-        {
-          staticClass: "form-select form-select-lg w-75 p-2",
-          attrs: { id: "autoSizingSelect" }
-        },
-        [
-          _c("option", { attrs: { selected: "" } }, [
-            _vm._v("Choose Duty Type...")
-          ]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "1" } }, [_vm._v("On Duty")]),
-          _vm._v(" "),
-          _c("option", { attrs: { value: "2" } }, [_vm._v("On Station")])
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row mb-3" }, [
-      _c(
-        "label",
-        {
-          staticClass: "col-sm-2 col-form-label",
-          attrs: { for: "autoSizingInput" }
-        },
-        [_vm._v("Body Number")]
-      ),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "form-select form-select-lg w-75 p-2",
-        attrs: {
-          type: "text",
-          id: "autoSizingInput",
-          placeholder: "Enter Body Number of the Gun"
-        }
-      })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

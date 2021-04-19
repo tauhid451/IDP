@@ -67,17 +67,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      gunCategory: "-1",
+      gunList: [],
+      loading: false
+    };
+  },
+  methods: {
+    getData: function getData() {
+      var _this = this;
+
+      var url = "/api/admin/issue/" + this.gunCategory;
+      axios.get(url).then(function (res) {
+        _this.gunList = res.data;
+        console.log(res);
+      })["catch"](function (err) {
+        console.log(err);
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -101,9 +112,98 @@ var render = function() {
     [
       _c("navbar", { tag: "component" }),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "container" }, [
+        _c("form", { attrs: { action: "#" } }, [
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.gunCategory,
+                  expression: "gunCategory"
+                }
+              ],
+              staticClass: "mt-5 form-select form-select-lg w-75 p-2",
+              attrs: { "aria-label": "Default select example" },
+              on: {
+                change: [
+                  function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.gunCategory = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  },
+                  _vm.getData
+                ]
+              }
+            },
+            [
+              _c("option", { attrs: { selected: "", value: "-1" } }, [
+                _vm._v("Choose Gun Type...")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "bd-08" } }, [_vm._v("BD-08")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "lmg" } }, [_vm._v("LMG")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "smg" } }, [_vm._v("SMG")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "pistol" } }, [_vm._v("Pistol")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "g3" } }, [_vm._v("G3")])
+            ]
+          ),
+          _vm._v(" "),
+          _c("button", { staticClass: "btn btn-primary m-5 p-2" }, [
+            _vm._v("Search")
+          ])
+        ])
+      ]),
       _vm._v(" "),
-      _vm._m(1)
+      _c("div", { staticClass: "container" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm.gunList.length > 0
+          ? _c("div", { staticClass: "mt-3" }, [
+              _c("table", { staticClass: "table" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.gunList, function(val, i) {
+                    return _c("tr", { key: i }, [
+                      _c("td", [_vm._v(_vm._s(i + 1))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(val.name))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(val.issue_time))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(val.deposite_time ? val.deposite_time : "N/A")
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(val.purpose))])
+                    ])
+                  }),
+                  0
+                )
+              ])
+            ])
+          : _vm._e()
+      ])
     ],
     1
   )
@@ -113,30 +213,19 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("form", { attrs: { action: "#" } }, [
-        _c(
-          "select",
-          {
-            staticClass: "mt-5 form-select form-select-lg w-75 p-2",
-            attrs: { "aria-label": "Default select example" }
-          },
-          [
-            _c("option", { attrs: { selected: "" } }, [
-              _vm._v("Select Gun Type")
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("One")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("Two")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("Three")])
-          ]
-        ),
+    return _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _c("h1", [_vm._v("Search Results")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-3 d-flex justify-content-between" }, [
+      _c("div", [
+        _c("div", [_vm._v("Kote: 10232")]),
         _vm._v(" "),
-        _c("button", { staticClass: "btn btn-primary m-5 p-2" }, [
-          _vm._v("Search")
-        ])
+        _c("div", [_vm._v("Kote NCO: 10203")])
       ])
     ])
   },
@@ -144,73 +233,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "d-flex justify-content-center" }, [
-        _c("h1", [_vm._v("Search Results")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mt-3 d-flex justify-content-between" }, [
-        _c("div", [
-          _c("div", [_vm._v("Kote: 10232")]),
-          _vm._v(" "),
-          _c("div", [_vm._v("Kote NCO: 10203")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mt-3" }, [
-        _c("table", { staticClass: "table" }, [
-          _c("thead", [
-            _c("tr", [
-              _c("th", { attrs: { scope: "col" } }, [_vm._v("Serial")]),
-              _vm._v(" "),
-              _c("th", { attrs: { scope: "col" } }, [_vm._v("Issued By")]),
-              _vm._v(" "),
-              _c("th", { attrs: { scope: "col" } }, [_vm._v("Issued On")]),
-              _vm._v(" "),
-              _c("th", { attrs: { scope: "col" } }, [_vm._v("DepositionTime")]),
-              _vm._v(" "),
-              _c("th", { attrs: { scope: "col" } }, [_vm._v("Purpose")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", [
-            _c("tr", [
-              _c("td", [_vm._v("AK-47")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("12")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("22")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("32")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("92")])
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("AK-47")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("12")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("22")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("32")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("92")])
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("AK-47")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("12")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("22")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("32")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("92")])
-            ])
-          ])
-        ])
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Serial")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Issued By")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Issued On")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("DepositionTime")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Purpose")])
       ])
     ])
   }

@@ -2121,6 +2121,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {//console.log(this.$store.state.role);
   }
@@ -6582,7 +6583,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-11e733ca]:hover {\r\n    color: #fff !important;\n}\n.avatar[data-v-11e733ca] {\r\n    vertical-align: middle;\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 50%;\n}\r\n", ""]);
+exports.push([module.i, "\na[data-v-11e733ca]:hover {\r\n  color: #fff !important;\n}\n.avatar[data-v-11e733ca] {\r\n  vertical-align: middle;\r\n  width: 50px;\r\n  height: 50px;\r\n  border-radius: 50%;\n}\r\n", ""]);
 
 // exports
 
@@ -38442,7 +38443,7 @@ var render = function() {
     },
     [
       _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("AMS")
+        _vm._v("Arseanal Maintenance System")
       ]),
       _vm._v(" "),
       _vm._m(0),
@@ -38485,7 +38486,9 @@ var render = function() {
                 )
               ],
               1
-            )
+            ),
+            _vm._v(" "),
+            _vm._m(1)
           ])
         ]
       )
@@ -38512,6 +38515,16 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "btn btn-outline-dark rounded mx-1 my-1" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "/logout" } }, [
+        _vm._v("Logout")
+      ])
+    ])
   }
 ]
 render._withStripped = true

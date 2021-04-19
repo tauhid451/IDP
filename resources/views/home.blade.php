@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>AMS</title>
+  <title>GMS</title>
   <link rel="icon" href="{{ asset('images/logos/logo-with-black-bg.svg') }}" type="image/icon type">
 
   <!-- Styles -->

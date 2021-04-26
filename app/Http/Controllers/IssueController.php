@@ -20,8 +20,15 @@ class IssueController extends Controller
 
         $user = DB::table('users')->where('rfid_id', '=', $data['rfid'])->first();
         if($user == null) {
-            return response('no user RFID found', 401);
+            return response('no user RFID found', 404);
         }
+        
+        $issued = DB::table('gun_issues')->where([['user_id', '=', $user->id],['deposite_time',null]])->first();
+
+        if($issued != null) {
+            return response("Gun already Issed", 404);
+        }
+
         $user_id = $user->id;
         $gun_id = $user->gun_id;
         $gunIssue->user_id = $user_id;
@@ -45,4 +52,31 @@ class IssueController extends Controller
                         ->get();
         return $issues;
     } 
+    public function depositeOne(Request $request) {
+        $data = $request->validate([
+            'rfid' => 'required',
+        ]);
+
+        $user = DB::table('users')->where('rfid_id', '=', $data['rfid'])->first();
+        if($user == null) {
+            return response('no user RFID found', 404);
+        }
+        
+        $issued = DB::table('gun_issues')->where('user_id', '=', $user->id)->first();
+
+        if($issued == null) {
+            return response("No Gun is Issed", 404);
+        }
+
+        $issued = DB::table('gun_issues')->where('user_id', '=', $user->id)->update([
+          "deposite_time" => new DateTime('now')
+        ]);
+        
+        $issued = DB::table('gun_issues')->where('user_id', '=', $user->id)->first();
+
+        return response()->json([
+          "depo" => $issued->deposite_time,
+        ]);
+
+    }
 }

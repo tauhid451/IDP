@@ -1,13 +1,20 @@
-* Run frontend
-* `npm run watch`
-* Run backend
-* `php artisan serve`
+-   Run frontend
 
-* Reset Database
-* `php artisan migrate:fresh`
-* `php artisan migrate:reset`
+    `npm run watch`
 
-* Admin Create
+-   Run backend
+
+    `php artisan serve`
+
+-   Reset Database
+
+```
+php artisan migrate:fresh
+php artisan migrate:reset
+```
+
+-   Admin Create
+
 ```
 $ php artisan tinker;
 use App\User;
@@ -22,3 +29,8 @@ $u->email = "admin@admin.com";
 $u->password = $pass;
 $u->save();
 ```
+
+-   TODO:
+
+*   [ ] inventory search based on koteID
+*   [ ] deposite api

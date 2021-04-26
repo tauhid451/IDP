@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Arsenal Maintenance System</title>
+        <title>ASM</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="css/app.css">
         <style>
             html, body {
                 background-color: #fff;
@@ -71,17 +72,16 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Arsenal Maintenance System
+              <div >
+                <img src="img/home1.png" alt="Home" style="width: 100%;height: 600px;object-fit: cover;">
+              </div>
+                <div class="title m-b-md mt-5">
+                  Arsenal Management System
                 </div>
             </div>
         </div>

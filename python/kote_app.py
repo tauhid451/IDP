@@ -1,5 +1,6 @@
 from flask import Flask 
 import RPi.GPIO as GPIO
+from flask import request
 
 #Lock 1
 lock_1_red_led = 11

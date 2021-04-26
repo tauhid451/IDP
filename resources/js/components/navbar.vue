@@ -3,7 +3,7 @@
     class="navbar navbar-expand-lg navbar-light bg-light"
     style="background-color: #d0f5ea !important"
   >
-    <a class="navbar-brand" href="#">Arseanal Maintenance System</a>
+    <a class="navbar-brand" href="#">Arsenal Maintenance System</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -22,8 +22,8 @@
           <router-link tag="a" class="nav-link" to="/about">About</router-link>
         </li>
         <li class="btn btn-outline-dark rounded mx-1 my-1">
-          <router-link tag="a" class="nav-link" to="/admin/home"
-            >Admin</router-link
+          <router-link tag="a" class="nav-link" to="/home"
+            >Home</router-link
           >
         </li>
         <li class="btn btn-outline-dark rounded mx-1 my-1">

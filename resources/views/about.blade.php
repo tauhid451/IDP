@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>AMS</title>
+        <title>Arsenal Maintenance System</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -23,10 +23,10 @@
                                 <a href="{{ route('login') }}">Login</a>
 
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}">Register</a>
+                                    <!-- <a href="{{ route('register') }}">Register</a> -->
                                 @endif
                             @endauth
-                            <a href="/about">About us</a>
+                            <!-- <a href="/about">About us</a> -->
                         </div>
                     @endif
                 </div>

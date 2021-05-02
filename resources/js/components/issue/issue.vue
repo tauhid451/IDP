@@ -127,6 +127,7 @@ export default {
           axios
             .get(url)
             .then((res) => {
+              window.location.href = "/home";
               console.log(res);
             })
             .catch((err) => {

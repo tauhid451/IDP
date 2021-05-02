@@ -126,6 +126,7 @@ __webpack_require__.r(__webpack_exports__);
         if (_this.purpose == "firing") _this.ledColor = "11";else if (_this.purpose == "maintainance") _this.ledColor = "12";else _this.ledColor = "13";
         url = "http://192.168.1.190:5000/gun-lock?gun_no=1&light_no=" + _this.ledColor;
         axios.get(url).then(function (res) {
+          window.location.href = "/home";
           console.log(res);
         })["catch"](function (err) {
           console.log(err);

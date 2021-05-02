@@ -61,6 +61,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -135,7 +146,7 @@ var render = function() {
       _c("navbar", { tag: "component" }),
       _vm._v(" "),
       _c("div", { staticClass: "row mt-5 mx-5" }, [
-        _c("div", { staticClass: "col-sm" }, [
+        _c("div", { staticClass: "col-3" }, [
           _c("div", { staticClass: "card" }, [
             _c(
               "div",
@@ -161,7 +172,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-sm" }, [
+        _c("div", { staticClass: "col-3" }, [
           _c("div", { staticClass: "card" }, [
             _c(
               "div",
@@ -190,7 +201,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-sm" }, [
+        _c("div", { staticClass: "col-3" }, [
           _c("div", { staticClass: "card" }, [
             _c(
               "div",
@@ -216,7 +227,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-sm" }, [
+        _c("div", { staticClass: "col-3" }, [
           _c("div", { staticClass: "card" }, [
             _c(
               "div",
@@ -235,6 +246,35 @@ var render = function() {
                   "router-link",
                   { staticClass: "btn btn-primary", attrs: { to: "/issue" } },
                   [_vm._v("Go Issue Or Deposit")]
+                )
+              ],
+              1
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-3 mt-4" }, [
+          _c("div", { staticClass: "card" }, [
+            _c(
+              "div",
+              { staticClass: "card-body text-center" },
+              [
+                _c("img", {
+                  staticClass: "card-img",
+                  attrs: { src: "/img/add-member.png" }
+                }),
+                _vm._v(" "),
+                _c("h5", { staticClass: "card-title mt-3" }, [
+                  _vm._v("Add member")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { to: "/add-member" }
+                  },
+                  [_vm._v("Add member")]
                 )
               ],
               1

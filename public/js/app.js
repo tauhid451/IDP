@@ -54051,7 +54051,7 @@ var routes = [{
   path: "/issue-report",
   name: "IssueReport",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/issueReport/issueReport.vue */ "./resources/js/components/issueReport/issueReport.vue"));
+    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/issueReport/issueReport.vue */ "./resources/js/components/issueReport/issueReport.vue"));
   }
 }, {
   path: "/home",
@@ -54063,19 +54063,25 @@ var routes = [{
   path: "/inventory",
   name: "AdminInventory",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/admin/inventory/inventory.vue */ "./resources/js/components/admin/inventory/inventory.vue"));
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/admin/inventory/inventory.vue */ "./resources/js/components/admin/inventory/inventory.vue"));
   }
 }, {
   path: "/report",
   name: "AdminReport",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/admin/report/report.vue */ "./resources/js/components/admin/report/report.vue"));
+    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/admin/report/report.vue */ "./resources/js/components/admin/report/report.vue"));
   }
 }, {
   path: "/reportGen",
   name: "AdminReportGen",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/admin/reportGen/reportGen.vue */ "./resources/js/components/admin/reportGen/reportGen.vue"));
+    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/admin/reportGen/reportGen.vue */ "./resources/js/components/admin/reportGen/reportGen.vue"));
+  }
+}, {
+  path: "/add-member",
+  name: "AddMember",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/admin/addMember/add_member.vue */ "./resources/js/components/admin/addMember/add_member.vue"));
   }
 }];
 

@@ -32,5 +32,10 @@ export const routes = [{
         path: "/reportGen",
         name: "AdminReportGen",
         component: () => import("./components/admin/reportGen/reportGen.vue")
+    },
+    {
+      path: "/add-member",
+      name: "AddMember",
+      component: () => import("./components/admin/addMember/add_member.vue")
     }
 ];

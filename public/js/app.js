@@ -2121,6 +2121,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {//console.log(this.$store.state.role);
   }
@@ -6582,7 +6584,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\na[data-v-11e733ca]:hover {\r\n    color: #fff !important;\n}\n.avatar[data-v-11e733ca] {\r\n    vertical-align: middle;\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 50%;\n}\r\n", ""]);
+exports.push([module.i, "\na[data-v-11e733ca]:hover {\r\n  color: #fff !important;\n}\n.avatar[data-v-11e733ca] {\r\n  vertical-align: middle;\r\n  width: 50px;\r\n  height: 50px;\r\n  border-radius: 50%;\n}\r\n", ""]);
 
 // exports
 
@@ -38438,11 +38440,11 @@ var render = function() {
     "nav",
     {
       staticClass: "navbar navbar-expand-lg navbar-light bg-light",
-      staticStyle: { "background-color": "#d0f5ea !important" }
+      staticStyle: { "background-color": "#299d6d !important" }
     },
     [
       _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("AMS")
+        _vm._v("Arsenal Maintenance System")
       ]),
       _vm._v(" "),
       _vm._m(0),
@@ -38477,15 +38479,14 @@ var render = function() {
               [
                 _c(
                   "router-link",
-                  {
-                    staticClass: "nav-link",
-                    attrs: { tag: "a", to: "/admin/home" }
-                  },
-                  [_vm._v("Admin")]
+                  { staticClass: "nav-link", attrs: { tag: "a", to: "/home" } },
+                  [_vm._v("Home")]
                 )
               ],
               1
-            )
+            ),
+            _vm._v(" "),
+            _vm._m(1)
           ])
         ]
       )
@@ -38512,6 +38513,16 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "btn btn-outline-dark rounded mx-1 my-1" }, [
+      _c("a", { staticClass: "nav-link", attrs: { href: "/logout" } }, [
+        _vm._v("Logout")
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -54026,52 +54037,52 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "routes", function() { return routes; });
 var routes = [{
-  path: "/home",
-  name: "Home",
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/home/home.vue */ "./resources/js/components/home/home.vue"));
-  }
-}, {
   path: "/about",
   name: "About",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/about/about.vue */ "./resources/js/components/about/about.vue"));
+    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/about/about.vue */ "./resources/js/components/about/about.vue"));
   }
 }, {
   path: "/issue",
   name: "Issue",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/issue/issue.vue */ "./resources/js/components/issue/issue.vue"));
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/issue/issue.vue */ "./resources/js/components/issue/issue.vue"));
   }
 }, {
   path: "/issue-report",
   name: "IssueReport",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/issueReport/issueReport.vue */ "./resources/js/components/issueReport/issueReport.vue"));
+    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./components/issueReport/issueReport.vue */ "./resources/js/components/issueReport/issueReport.vue"));
   }
 }, {
-  path: "/admin/home",
+  path: "/home",
   name: "AdminHome",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/admin/home/home.vue */ "./resources/js/components/admin/home/home.vue"));
+    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/admin/home/home.vue */ "./resources/js/components/admin/home/home.vue"));
   }
 }, {
-  path: "/admin/inventory",
+  path: "/inventory",
   name: "AdminInventory",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/admin/inventory/inventory.vue */ "./resources/js/components/admin/inventory/inventory.vue"));
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/admin/inventory/inventory.vue */ "./resources/js/components/admin/inventory/inventory.vue"));
   }
 }, {
-  path: "/admin/report",
+  path: "/report",
   name: "AdminReport",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/admin/report/report.vue */ "./resources/js/components/admin/report/report.vue"));
+    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/admin/report/report.vue */ "./resources/js/components/admin/report/report.vue"));
   }
 }, {
-  path: "/admin/reportGen",
+  path: "/reportGen",
   name: "AdminReportGen",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/admin/reportGen/reportGen.vue */ "./resources/js/components/admin/reportGen/reportGen.vue"));
+    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/admin/reportGen/reportGen.vue */ "./resources/js/components/admin/reportGen/reportGen.vue"));
+  }
+}, {
+  path: "/add-member",
+  name: "AddMember",
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/admin/addMember/add_member.vue */ "./resources/js/components/admin/addMember/add_member.vue"));
   }
 }];
 

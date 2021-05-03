@@ -1,10 +1,4 @@
-export const routes = [
-    {
-        path: "/home",
-        name: "Home",
-        component: () => import("./components/home/home.vue")
-    },
-    {
+export const routes = [{
         path: "/about",
         name: "About",
         component: () => import("./components/about/about.vue")
@@ -20,23 +14,28 @@ export const routes = [
         component: () => import("./components/issueReport/issueReport.vue")
     },
     {
-        path: "/admin/home",
+        path: "/home",
         name: "AdminHome",
         component: () => import("./components/admin/home/home.vue")
     },
     {
-        path: "/admin/inventory",
+        path: "/inventory",
         name: "AdminInventory",
         component: () => import("./components/admin/inventory/inventory.vue")
     },
     {
-        path: "/admin/report",
+        path: "/report",
         name: "AdminReport",
         component: () => import("./components/admin/report/report.vue")
     },
     {
-        path: "/admin/reportGen",
+        path: "/reportGen",
         name: "AdminReportGen",
         component: () => import("./components/admin/reportGen/reportGen.vue")
+    },
+    {
+      path: "/add-member",
+      name: "AddMember",
+      component: () => import("./components/admin/addMember/add_member.vue")
     }
 ];

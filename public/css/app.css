@@ -1311,7 +1311,7 @@ pre code {
   }
 
   .offset-md-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 5.333333%;
   }
 
   .offset-md-5 {
@@ -4534,7 +4534,8 @@ input[type=button].btn-block {
   padding-top: 0.32rem;
   padding-bottom: 0.32rem;
   margin-right: 1rem;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  font-weight: 900;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4879,6 +4880,9 @@ input[type=button].btn-block {
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5);
+  color: #fffe00;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -4980,6 +4984,7 @@ input[type=button].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  -webkit-text-stroke-width: medium;
 }
 
 .card > hr {
@@ -5013,6 +5018,12 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  
+  text-align: right !important;
+  font-weight: 900;
+  font-size: medium;
+  color: white;
+
 }
 
 .card-title {
@@ -5045,6 +5056,10 @@ input[type=button].btn-block {
 
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: large;
+  background-color: #dfc300;
 }
 
 .card-footer {
@@ -8674,6 +8689,7 @@ button.bg-dark:focus {
 .pb-4,
 .py-4 {
   padding-bottom: 1.5rem !important;
+  height: 655px;;
 }
 
 .pl-4,

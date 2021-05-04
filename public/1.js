@@ -186,7 +186,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.profile-img[data-v-79226cb0] {\n  max-width: 120px;\n  border-radius: 50%;\n}\n", ""]);
+exports.push([module.i, "\n.profile-img[data-v-79226cb0] {\r\n  max-width: 120px;\r\n  border-radius: 50%;\n}\r\n", ""]);
 
 // exports
 

@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app"> 
+    <div id="app">  
         <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #299d6d !important">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -72,7 +72,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="background-image:url('images/demo/backgrounds/bb_login.jpg'); background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;">
             @yield('content')
         </main>
     </div>

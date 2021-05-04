@@ -88,7 +88,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.card-img[data-v-29a3ba54] {\n  max-width: 100%;\n  height: 150px;\n  -o-object-fit: contain;\n     object-fit: contain;\n}\n", ""]);
+exports.push([module.i, "\n.card-img[data-v-29a3ba54] {\r\n  max-width: 100%;\r\n  height: 150px;\r\n  -o-object-fit: contain;\r\n     object-fit: contain;\n}\r\n", ""]);
 
 // exports
 

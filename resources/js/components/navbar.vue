@@ -1,9 +1,9 @@
 <template>
   <nav
     class="navbar navbar-expand-lg navbar-light bg-light"
-    style="background-color: #299d6d !important"
+    style="background-color: #b1b66b !important;"
   >
-    <a class="navbar-brand" href="#">Arsenal Maintenance System</a>
+    <a class="navbar-brand" style="font-size:1.5rem;font-weight:bold;" href="#">Arsenal Maintenance System</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -18,16 +18,16 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
       <ul class="navbar-nav ml-auto">
-        <li class="btn btn-outline-dark rounded mx-1 my-1">
-          <router-link tag="a" class="nav-link" to="/about">About</router-link>
+        <li class="btn btn-outline-success rounded mx-1 my-1">
+          <router-link tag="a" class="nav-link" style="color: black; font-weight: bold; font-size:larger" to="/about">About</router-link>
         </li>
-        <li class="btn btn-outline-dark rounded mx-1 my-1">
-          <router-link tag="a" class="nav-link" to="/home"
+        <li class="btn btn-outline-success rounded mx-1 my-1">
+          <router-link tag="a" class="nav-link" style="color: black; font-weight: bold; font-size:larger" to="/home"
             >Home</router-link
           >
         </li>
-        <li class="btn btn-outline-dark rounded mx-1 my-1">
-          <a href="/logout" class="nav-link">Logout</a>
+        <li class="btn btn-outline-success rounded mx-1 my-1">
+          <a href="/logout" class="nav-link" style="color: black; font-weight: bold; font-size:larger">Logout</a>
         </li>
         <!-- <template v-if="this.$store.state.role == 'admin'">
                     <li class="btn btn-outline-dark rounded mx-1 my-1">

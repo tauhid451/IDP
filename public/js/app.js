@@ -38440,12 +38440,18 @@ var render = function() {
     "nav",
     {
       staticClass: "navbar navbar-expand-lg navbar-light bg-light",
-      staticStyle: { "background-color": "#299d6d !important" }
+      staticStyle: { "background-color": "#b1b66b !important" }
     },
     [
-      _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("Arsenal Maintenance System")
-      ]),
+      _c(
+        "a",
+        {
+          staticClass: "navbar-brand",
+          staticStyle: { "font-size": "1.5rem", "font-weight": "bold" },
+          attrs: { href: "#" }
+        },
+        [_vm._v("Arsenal Maintenance System")]
+      ),
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
@@ -38459,12 +38465,17 @@ var render = function() {
           _c("ul", { staticClass: "navbar-nav ml-auto" }, [
             _c(
               "li",
-              { staticClass: "btn btn-outline-dark rounded mx-1 my-1" },
+              { staticClass: "btn btn-outline-success rounded mx-1 my-1" },
               [
                 _c(
                   "router-link",
                   {
                     staticClass: "nav-link",
+                    staticStyle: {
+                      color: "black",
+                      "font-weight": "bold",
+                      "font-size": "larger"
+                    },
                     attrs: { tag: "a", to: "/about" }
                   },
                   [_vm._v("About")]
@@ -38475,11 +38486,19 @@ var render = function() {
             _vm._v(" "),
             _c(
               "li",
-              { staticClass: "btn btn-outline-dark rounded mx-1 my-1" },
+              { staticClass: "btn btn-outline-success rounded mx-1 my-1" },
               [
                 _c(
                   "router-link",
-                  { staticClass: "nav-link", attrs: { tag: "a", to: "/home" } },
+                  {
+                    staticClass: "nav-link",
+                    staticStyle: {
+                      color: "black",
+                      "font-weight": "bold",
+                      "font-size": "larger"
+                    },
+                    attrs: { tag: "a", to: "/home" }
+                  },
                   [_vm._v("Home")]
                 )
               ],
@@ -38518,11 +38537,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "btn btn-outline-dark rounded mx-1 my-1" }, [
-      _c("a", { staticClass: "nav-link", attrs: { href: "/logout" } }, [
-        _vm._v("Logout")
-      ])
-    ])
+    return _c(
+      "li",
+      { staticClass: "btn btn-outline-success rounded mx-1 my-1" },
+      [
+        _c(
+          "a",
+          {
+            staticClass: "nav-link",
+            staticStyle: {
+              color: "black",
+              "font-weight": "bold",
+              "font-size": "larger"
+            },
+            attrs: { href: "/logout" }
+          },
+          [_vm._v("Logout")]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true

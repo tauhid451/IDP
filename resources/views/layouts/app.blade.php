@@ -20,10 +20,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">  
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color: #299d6d !important">
+    <div id="app"  style="background-image:url('images/demo/backgrounds/bb_login.jpg'); height:50rem; background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;">  
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/') }}" style="padding-top: 1.5rem;color:rgb(225, 228, 51);font-size:1.5rem;font-weight:bold;">
                     Arsenal Maintenance System
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -41,7 +41,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/') }}">Home</a>
+                                <a class="nav-link" style="color:green;font-size:1.125rem;" href="{{ url('/') }}">Home</a>
                             </li>
                             @if (Route::has('register'))
                                 <!--<li class="nav-item">
@@ -72,7 +72,7 @@
             </div>
         </nav>
 
-        <main class="py-4" style="background-image:url('images/demo/backgrounds/bb_login.jpg'); background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;">
+        <main class="py-4">
             @yield('content')
         </main>
     </div>

@@ -1,19 +1,17 @@
 <template>
-  <div>
+     <div id="app"  style="background-image:url('images/demo/backgrounds/adduserback.jpg'); height:50rem; background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;"> 
     <component v-bind:is="'navbar'"></component>
 
-    <div class="container mt-5">
+    <div class="container mt-5" style="background-color:#ffffff80">
       <div class="row text-center justify-content-center">
-        <div class="col-3">
+        <div class="col-3" style="    max-width: 20%;margin-top: 10rem;margin-right: 7rem;">
           <img src="/img/add-member.png" style="width: 90%" />
           <h3 class="mt-3">Add New User</h3>
         </div>
-      </div>
-      <div class="row justify-content-center mt-5 mb-5">
-        <div class="col-8">
+                <div class="col-5">
           <form @submit.prevent="submitData">
             <div class="form-group">
-              <label>Name</label>
+              <label style="display:flex">Name</label>
               <input
                 type="text"
                 class="form-control"
@@ -23,7 +21,7 @@
             </div>
 
             <div class="form-group">
-              <label>Rfid No</label>
+              <label style="display:flex">Rfid No</label>
               <input
                 type="text"
                 v-model="rfid"
@@ -33,7 +31,7 @@
             </div>
 
             <div class="form-group">
-              <label>Email address</label>
+              <label style="display:flex">Email address</label>
               <input
                 type="email"
                 v-model="email"
@@ -43,7 +41,7 @@
             </div>
 
             <div class="form-group">
-              <label>Password</label>
+              <label style="display:flex">Password</label>
               <input
                 type="password"
                 v-model="password"
@@ -53,7 +51,7 @@
             </div>
 
             <div class="form-group">
-              <label>Gun No</label>
+              <label style="display:flex">Gun No</label>
               <input
                 type="text"
                 v-model="gunNo"
@@ -63,7 +61,7 @@
             </div>
 
             <div class="form-group">
-              <label>Soldier No</label>
+              <label style="display:flex">Soldier No</label>
               <input
                 type="text"
                 v-model="soldierNo"

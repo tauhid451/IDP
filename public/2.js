@@ -44,6 +44,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -74,39 +76,82 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col" }),
-        _vm._v(" "),
-        _c("div", [
-          _c("p", [
-            _vm._v(
-              "\n                    This smart weapons management system is one in which the\n                    management of weapons control and monitoring can be done\n                    at the ground level.\n                "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                    Authorization and issuance of authorization can be done\n                    at any location of military departments or camps even in\n                    different regions. Monitoring and data will be monitored\n                    regularly by authorized departments.\n                "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                    The system also includes some components such as\n                    management services and communications services.\n                "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                    Ideally, for military, police, prisons, and other\n                    security agencies that require a quick and easy way to\n                    manage supply chain-of custody for armory inventory and\n                    other critical assets.\n                "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col" })
-      ])
-    ])
+    return _c(
+      "div",
+      {
+        staticClass: "bgded",
+        staticStyle: {
+          "background-image": "url('images/demo/backgrounds/01.png')",
+          height: "40rem"
+        }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c(
+            "div",
+            { staticClass: "row", staticStyle: { "padding-top": "8rem" } },
+            [
+              _c("div", { staticClass: "col" }),
+              _vm._v(" "),
+              _c("div", [
+                _c("h2", { staticStyle: { "font-weight": "bold" } }, [
+                  _vm._v(
+                    "\n                       This smart weapons management system is one in which the\n                       management of weapons control and monitoring can be done\n                       at the ground level.\n                   "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "h2",
+                  {
+                    staticStyle: {
+                      "padding-top": "1rem",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                       Authorization and issuance of authorization can be done\n                       at any location of military departments or camps even in\n                       different regions. Monitoring and data will be monitored\n                       regularly by authorized departments.\n                   "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h2",
+                  {
+                    staticStyle: {
+                      "padding-top": "1rem",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                       The system also includes some components such as\n                       management services and communications services.\n                   "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h2",
+                  {
+                    staticStyle: {
+                      "padding-top": "1rem",
+                      "font-weight": "bold"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                       Ideally, for military, police, prisons, and other\n                       security agencies that require a quick and easy way to\n                       manage supply chain-of custody for armory inventory and\n                       other critical assets.\n                   "
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" })
+            ]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

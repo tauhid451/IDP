@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-image:url('images/demo/backgrounds/rfid.jpg'); height:50rem; background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;">
     <component v-bind:is="'navbar'"></component>
     <div v-if="showInputForm" class="container text-center mt-5">
       <div>
@@ -71,12 +71,12 @@
         </button>
         <button v-else class="btn btn-primary" @click="lockGun">Lock</button>
       </div>
-      <div v-else class="m-5 text-center">
-        <h3>Insert RFID</h3>
+      <div v-else class="m-5 text-center" style="margin-top: 9rem !important;">
+        <h3 style="font-size: xx-large;font-weight: bolder;color: #000000 !important;">Insert RFID</h3>
         <input type="text" v-model="rfid" autofocus />
         <div class="mt-3">
           <button class="btn btn-primary" @click="checkIssued">
-            Issue/Deposite
+            Issue/Deposit
           </button>
         </div>
       </div>
@@ -122,7 +122,7 @@ export default {
           else this.ledColor = "13";
 
           url =
-            "http://192.168.1.190:5000/gun-lock?gun_no=1&light_no=" +
+            "http://192.168.0.125:5000/gun-lock?gun_no=1&light_no=" +
             this.ledColor;
           axios
             .get(url)
@@ -167,7 +167,7 @@ export default {
           console.log(res);
           alert("Locked!");
 
-          url = "http://192.168.1.190:5000/gun-lock?gun_no=0&light_no=00";
+          url = "http://192.168.0.125:5000/gun-lock?gun_no=0&light_no=00";
           axios
             .get(url)
             .then((res) => {

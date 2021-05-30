@@ -124,7 +124,7 @@ __webpack_require__.r(__webpack_exports__);
         console.log(res);
         alert("Issued!");
         if (_this.purpose == "firing") _this.ledColor = "11";else if (_this.purpose == "maintainance") _this.ledColor = "12";else _this.ledColor = "13";
-        url = "http://192.168.1.190:5000/gun-lock?gun_no=1&light_no=" + _this.ledColor;
+        url = "http://192.168.0.125:5000/gun-lock?gun_no=1&light_no=" + _this.ledColor;
         axios.get(url).then(function (res) {
           window.location.href = "/home";
           console.log(res);
@@ -159,7 +159,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post(url, formData).then(function (res) {
         console.log(res);
         alert("Locked!");
-        url = "http://192.168.1.190:5000/gun-lock?gun_no=0&light_no=00";
+        url = "http://192.168.0.125:5000/gun-lock?gun_no=0&light_no=00";
         axios.get(url).then(function (res) {
           console.log(res);
         })["catch"](function (err) {
@@ -240,6 +240,16 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    {
+      staticStyle: {
+        "background-image": "url('images/demo/backgrounds/rfid.jpg')",
+        height: "50rem",
+        "background-repeat": "no-repeat",
+        "background-size": "cover",
+        "background-position": "center center",
+        "background-attachment": "fixed"
+      }
+    },
     [
       _c("navbar", { tag: "component" }),
       _vm._v(" "),
@@ -415,41 +425,58 @@ var render = function() {
                     [_vm._v("Lock")]
                   )
             ])
-          : _c("div", { staticClass: "m-5 text-center" }, [
-              _c("h3", [_vm._v("Insert RFID")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.rfid,
-                    expression: "rfid"
-                  }
-                ],
-                attrs: { type: "text", autofocus: "" },
-                domProps: { value: _vm.rfid },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.rfid = $event.target.value
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "mt-3" }, [
+          : _c(
+              "div",
+              {
+                staticClass: "m-5 text-center",
+                staticStyle: { "margin-top": "9rem !important" }
+              },
+              [
                 _c(
-                  "button",
+                  "h3",
                   {
-                    staticClass: "btn btn-primary",
-                    on: { click: _vm.checkIssued }
+                    staticStyle: {
+                      "font-size": "xx-large",
+                      "font-weight": "bolder",
+                      color: "#000000 !important"
+                    }
                   },
-                  [_vm._v("\n          Issue/Deposite\n        ")]
-                )
-              ])
-            ])
+                  [_vm._v("Insert RFID")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.rfid,
+                      expression: "rfid"
+                    }
+                  ],
+                  attrs: { type: "text", autofocus: "" },
+                  domProps: { value: _vm.rfid },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.rfid = $event.target.value
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "mt-3" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      on: { click: _vm.checkIssued }
+                    },
+                    [_vm._v("\n          Issue/Deposit\n        ")]
+                  )
+                ])
+              ]
+            )
       ])
     ],
     1

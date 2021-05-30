@@ -72,6 +72,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -142,146 +143,271 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    {
+      staticStyle: {
+        "background-image": "url('images/demo/backgrounds/01.png')",
+        height: "50rem",
+        "background-repeat": "no-repeat",
+        "background-size": "cover",
+        "background-position": "center center",
+        "background-attachment": "fixed"
+      },
+      attrs: { id: "app" }
+    },
     [
       _c("navbar", { tag: "component" }),
       _vm._v(" "),
-      _c("div", { staticClass: "row mt-5 mx-5" }, [
-        _c("div", { staticClass: "col-3" }, [
-          _c("div", { staticClass: "card" }, [
+      _c(
+        "div",
+        {
+          staticClass: "row mt-5 mx-5",
+          staticStyle: { "margin-top": "2rem !important" }
+        },
+        [
+          _c("div", { staticClass: "col-6" }, [
             _c(
               "div",
-              { staticClass: "card-body text-center" },
+              {
+                staticClass: "card",
+                staticStyle: {
+                  "background-image":
+                    "url('images/demo/dashboard/adduser.jpg')",
+                  border: "4px solid rgb(29 58 37)"
+                }
+              },
               [
-                _c("img", {
-                  staticClass: "card-img",
-                  attrs: { src: "/img/maintainance.png" }
-                }),
-                _vm._v(" "),
-                _c("h5", { staticClass: "card-title mt-3" }, [
-                  _vm._v("Maintainance")
-                ]),
-                _vm._v(" "),
                 _c(
-                  "router-link",
-                  { staticClass: "btn btn-primary", attrs: { to: "/issue" } },
-                  [_vm._v("Go Maintainance")]
+                  "div",
+                  { staticClass: "card-body text-center" },
+                  [
+                    _c("img", {
+                      staticClass: "card-img",
+                      attrs: { src: "/img/add-member.png" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass: "card-title mt-3",
+                        staticStyle: {
+                          color: "white",
+                          "text-shadow": "2px 2px #5e23d2",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Add member")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { to: "/add-member" }
+                      },
+                      [_vm._v("Add member")]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
+              ]
             )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-3" }, [
-          _c("div", { staticClass: "card" }, [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-6" }, [
             _c(
               "div",
-              { staticClass: "card-body text-center" },
+              {
+                staticClass: "card",
+                staticStyle: {
+                  "background-image": "url('images/demo/dashboard/issue.jpg')",
+                  border: "4px solid rgb(29 58 37)"
+                }
+              },
               [
-                _c("img", {
-                  staticClass: "card-img",
-                  attrs: { src: "/img/inventory.png" }
-                }),
-                _vm._v(" "),
-                _c("h5", { staticClass: "card-title mt-3" }, [
-                  _vm._v("Inventory")
-                ]),
-                _vm._v(" "),
                 _c(
-                  "router-link",
-                  {
-                    staticClass: "btn btn-primary",
-                    attrs: { to: "/inventory" }
-                  },
-                  [_vm._v("Go Inventory")]
+                  "div",
+                  { staticClass: "card-body text-center" },
+                  [
+                    _c("img", {
+                      staticClass: "card-img",
+                      attrs: { src: "/img/deposit.png" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass: "card-title mt-3",
+                        staticStyle: {
+                          color: "white",
+                          "text-shadow": "2px 2px #5e23d2",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Issue Or Deposit")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { to: "/issue" }
+                      },
+                      [_vm._v("Go Issue Or Deposit")]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
+              ]
             )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-3" }, [
-          _c("div", { staticClass: "card" }, [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-4 mt-4" }, [
             _c(
               "div",
-              { staticClass: "card-body text-center" },
+              {
+                staticClass: "card",
+                staticStyle: {
+                  "background-image":
+                    "url('images/demo/dashboard/maintenance.jpg')",
+                  border: "4px solid rgb(29 58 37)"
+                }
+              },
               [
-                _c("img", {
-                  staticClass: "card-img",
-                  attrs: { src: "/img/report.png" }
-                }),
-                _vm._v(" "),
-                _c("h5", { staticClass: "card-title mt-3" }, [
-                  _vm._v("Report")
-                ]),
-                _vm._v(" "),
                 _c(
-                  "router-link",
-                  { staticClass: "btn btn-primary", attrs: { to: "/report" } },
-                  [_vm._v("Go Report")]
+                  "div",
+                  { staticClass: "card-body text-center" },
+                  [
+                    _c("img", {
+                      staticClass: "card-img",
+                      attrs: { src: "/img/maintainance.png" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass: "card-title mt-3",
+                        staticStyle: {
+                          color: "white",
+                          "text-shadow": "2px 2px #5e23d2",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Maintainance")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { to: "/issue" }
+                      },
+                      [_vm._v("Go Maintainance")]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
+              ]
             )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-3" }, [
-          _c("div", { staticClass: "card" }, [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-4 mt-4" }, [
             _c(
               "div",
-              { staticClass: "card-body text-center" },
+              {
+                staticClass: "card",
+                staticStyle: {
+                  "background-image":
+                    "url('images/demo/dashboard/inventory.jpg')",
+                  border: "4px solid rgb(29 58 37)"
+                }
+              },
               [
-                _c("img", {
-                  staticClass: "card-img",
-                  attrs: { src: "/img/deposit.png" }
-                }),
-                _vm._v(" "),
-                _c("h5", { staticClass: "card-title mt-3" }, [
-                  _vm._v("Issue Or Deposit")
-                ]),
-                _vm._v(" "),
                 _c(
-                  "router-link",
-                  { staticClass: "btn btn-primary", attrs: { to: "/issue" } },
-                  [_vm._v("Go Issue Or Deposit")]
+                  "div",
+                  { staticClass: "card-body text-center" },
+                  [
+                    _c("img", {
+                      staticClass: "card-img",
+                      attrs: { src: "/img/inventory.png" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass: "card-title mt-3",
+                        staticStyle: {
+                          color: "white",
+                          "text-shadow": "2px 2px #5e23d2",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Inventory")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { to: "/inventory" }
+                      },
+                      [_vm._v("Go Inventory")]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
+              ]
             )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-3 mt-4" }, [
-          _c("div", { staticClass: "card" }, [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-4 mt-4" }, [
             _c(
               "div",
-              { staticClass: "card-body text-center" },
+              {
+                staticClass: "card",
+                staticStyle: {
+                  "background-image": "url('images/demo/dashboard/report.jpg')",
+                  border: "4px solid rgb(29 58 37)"
+                }
+              },
               [
-                _c("img", {
-                  staticClass: "card-img",
-                  attrs: { src: "/img/add-member.png" }
-                }),
-                _vm._v(" "),
-                _c("h5", { staticClass: "card-title mt-3" }, [
-                  _vm._v("Add member")
-                ]),
-                _vm._v(" "),
                 _c(
-                  "router-link",
-                  {
-                    staticClass: "btn btn-primary",
-                    attrs: { to: "/add-member" }
-                  },
-                  [_vm._v("Add member")]
+                  "div",
+                  { staticClass: "card-body text-center" },
+                  [
+                    _c("img", {
+                      staticClass: "card-img",
+                      attrs: { src: "/img/report.png" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass: "card-title mt-3",
+                        staticStyle: {
+                          color: "white",
+                          "text-shadow": "2px 2px #5e23d2",
+                          "font-weight": "bold"
+                        }
+                      },
+                      [_vm._v("Report")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-primary",
+                        attrs: { to: "/report" }
+                      },
+                      [_vm._v("Go Report")]
+                    )
+                  ],
+                  1
                 )
-              ],
-              1
+              ]
             )
           ])
-        ])
-      ])
+        ]
+      )
     ],
     1
   )

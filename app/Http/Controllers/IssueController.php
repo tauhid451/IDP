@@ -79,4 +79,143 @@ class IssueController extends Controller
         ]);
 
     }
+    public function report(Request $request) {
+        $data = $request->validate([
+                'gun_id' => 'required',
+                'fromDate' => 'required',
+                'toDate' => 'required'
+            ]);
+        
+        // $fetched = DB::table('users')->join('guns', 'guns.id', '=', 'users.gun_id')->where('guns.id', '=', $data['gun_id'])->first();
+        $fetched = DB::table('users')
+                        ->join('guns', 'guns.id', '=', 'users.gun_id')
+                        ->where('gun_id', '=', $data['gun_id'])->first();
+
+        $pistolCount = DB::table('guns')
+                            ->where([['kote_id', '=', $fetched->kote_id], ['gun_category', '=', 'pistol']])
+                            ->get()->count();
+        $lmgCount = DB::table('guns')
+                            ->where([['kote_id', '=', $fetched->kote_id], ['gun_category', '=', 'lmg']])
+                            ->get()->count();
+        $smgCount = DB::table('guns')
+                            ->where([['kote_id', '=', $fetched->kote_id], ['gun_category', '=', 'smg']])
+                            ->get()->count();
+        $mgCount = DB::table('guns')
+                            ->where([['kote_id', '=', $fetched->kote_id], ['gun_category', '=', 'mg']])
+                            ->get()->count();
+        $rifleCount = DB::table('guns')
+                            ->where([['kote_id', '=', $fetched->kote_id], ['gun_category', '=', 'rifle']])
+                            ->get()->count();
+
+        $gunIds = DB::table('guns')
+                            ->where([['kote_id', '=', $fetched->kote_id]])->select('id')->get();
+
+        $gunIdArray = array();
+        foreach($gunIds as $gunId) {
+            // echo $gunId->id;
+            array_push($gunIdArray, $gunId->id);
+        }
+        
+        $rifleOnDuty = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on duty'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'rifle']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        $rifleOnStation = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on station'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'rifle']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        
+        // pistol
+        $pistolOnDuty = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on duty'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'pistol']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        $pistolOnStation = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on station'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'pistol']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        // smg
+        $smgOnDuty = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on duty'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'smg']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        $smgOnStation = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on station'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'smg']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        // lmg
+        $lmgOnDuty = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on duty'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'lmg']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        $lmgOnStation = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on station'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'lmg']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        // mg
+        $mgOnDuty = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on duty'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'lmg']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+        $mgOnStation = DB::table('gun_issues')
+                        ->join('guns', 'guns.id', '=', 'gun_issues.gun_id')
+                        ->where([['duty', '=', 'on station'], ['deposite_time', '=', NULL], ['guns.gun_category', '=', 'lmg']])
+                        ->whereBetween('issue_time', [$data['fromDate'], $data['toDate']])
+                        ->whereIn('gun_id', $gunIdArray)
+                        ->get()->count();
+
+        // echo $rifleOnDuty;
+        // echo $rifleOnStation;
+        // echo $gunIds;
+        // var_dump($gunIdArray);
+
+        $countOnDuty = DB::table('gun_issues')->whereBetween('issue_time', ['2021-05-30', '2021-05-30'])->where('duty', '=', 'on duty')->get()->count();
+        $countOnStation = DB::table('gun_issues')->whereBetween('issue_time', ['2021-05-30', '2021-05-30'])->where('duty', '=', 'on station')->get()->count();
+
+        // echo $countOnDuty;
+        // echo $countOnStation;
+        // return 'hi';
+        return response()->json([
+            "rifleCount" => $rifleCount,
+            "pistolCount" => $pistolCount,
+            "lmgCount" => $lmgCount,
+            "smgCount" => $smgCount,
+            "mgCount" => $mgCount,
+           "rifleOnDuty" => $rifleOnDuty,
+           "rifleOnStation" => $rifleOnStation,
+           "smgOnDuty" => $smgOnDuty,
+            "smgOnStation" => $smgOnStation,
+            "mgOnDuty" => $mgOnDuty,
+            "mgOnStation" => $mgOnStation,
+           "pistolOnDuty" => $pistolOnDuty,
+            "pistolOnStation" => $pistolOnStation,
+           "lmgOnDuty" => $lmgOnDuty,
+            "lmgOnStation" => $lmgOnStation,
+        ]);
+    }
+    public function userInfo(Request $request, $userId = null) {
+        if($userId == null) {
+            return response('please pass userId as parameter', 401);
+        }
+        $user = DB::table('users')->where('id', '=', $userId)->first();
+        return $user->gun_id;
+    }
 }

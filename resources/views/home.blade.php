@@ -3,12 +3,18 @@
 
 <head>
 
-  <title>GMS</title>
+  <title>AMS</title>
+
   <link rel="icon" href="{{ asset('images/logos/logo-with-black-bg.svg') }}" type="image/icon type">
 
   <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+<script>
+window.User = {
+  id: '{{ optional(auth()->user())->id }}'
+}
+</script>
 </head>
 
 <body>

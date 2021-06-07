@@ -53898,6 +53898,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 
+Vue.prototype.$user = window.User;
+console.log(Vue.prototype.$user);
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 Vue.component("navbar", __webpack_require__(/*! ./components/navbar.vue */ "./resources/js/components/navbar.vue")["default"]);
 /**
@@ -54073,13 +54075,13 @@ var routes = [{
   path: "/about",
   name: "About",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/about/about.vue */ "./resources/js/components/about/about.vue"));
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/about/about.vue */ "./resources/js/components/about/about.vue"));
   }
 }, {
   path: "/issue",
   name: "Issue",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/issue/issue.vue */ "./resources/js/components/issue/issue.vue"));
+    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/issue/issue.vue */ "./resources/js/components/issue/issue.vue"));
   }
 }, {
   path: "/issue-report",
@@ -54091,31 +54093,31 @@ var routes = [{
   path: "/home",
   name: "AdminHome",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./components/admin/home/home.vue */ "./resources/js/components/admin/home/home.vue"));
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./components/admin/home/home.vue */ "./resources/js/components/admin/home/home.vue"));
   }
 }, {
   path: "/inventory",
   name: "AdminInventory",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/admin/inventory/inventory.vue */ "./resources/js/components/admin/inventory/inventory.vue"));
+    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/admin/inventory/inventory.vue */ "./resources/js/components/admin/inventory/inventory.vue"));
   }
 }, {
   path: "/report",
   name: "AdminReport",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/admin/report/report.vue */ "./resources/js/components/admin/report/report.vue"));
+    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./components/admin/report/report.vue */ "./resources/js/components/admin/report/report.vue"));
   }
 }, {
   path: "/reportGen",
   name: "AdminReportGen",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./components/admin/reportGen/reportGen.vue */ "./resources/js/components/admin/reportGen/reportGen.vue"));
+    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./components/admin/reportGen/reportGen.vue */ "./resources/js/components/admin/reportGen/reportGen.vue"));
   }
 }, {
   path: "/add-member",
   name: "AddMember",
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./components/admin/addMember/add_member.vue */ "./resources/js/components/admin/addMember/add_member.vue"));
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./components/admin/addMember/add_member.vue */ "./resources/js/components/admin/addMember/add_member.vue"));
   }
 }];
 

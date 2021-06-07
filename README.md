@@ -30,7 +30,17 @@ $u->password = $pass;
 $u->save();
 ```
 
--   TODO:
+*   TODO:
 
 *   [ ] inventory search based on koteID
 *   [ ] deposite api
+
+```sql
+
+--- got all pistols
+select count(*) from guns where kote_id='1' and gun_category='pistol'
+
+```
+
+
+

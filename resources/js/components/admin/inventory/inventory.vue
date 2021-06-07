@@ -10,7 +10,7 @@
           @change="getData"
         >
           <option selected value="-1">Choose Gun Type...</option>
-          <option value="bd-08">BD-08</option>
+          <option value="rifle">Rifle</option>
           <option value="lmg">LMG</option>
           <option value="smg">SMG</option>
           <option value="pistol">Pistol</option>

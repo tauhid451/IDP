@@ -9,6 +9,8 @@ require("./bootstrap");
 window.Vue = require("vue");
 import VueRouter from "vue-router";
 import { routes } from "./routes";
+Vue.prototype.$user = window.User;
+console.log(Vue.prototype.$user);
 
 Vue.use(VueRouter);
 Vue.component("navbar", require("./components/navbar.vue").default);
